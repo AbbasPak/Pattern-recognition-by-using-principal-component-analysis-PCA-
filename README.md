@@ -56,6 +56,8 @@ df<- data.frame(read.table("data//PCA//data3.txt"))
 
 ![](figures/df-Salvia.JPG)<!-- -->
 
+![](figures/fig1.JPG)<!-- -->
+
 _Performing PCA_
 ```{r, echo=FALSE}
 df<-scale(df)
