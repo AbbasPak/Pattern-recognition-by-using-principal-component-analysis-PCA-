@@ -53,7 +53,9 @@ In this example, PCA is performed to find the association between the different 
 ```{r}
 df<- data.frame(read.table("data//PCA//data3.txt"))
 ```
+
 ![](figures/df-Salvia.JPG)<!-- -->
+
 _Performing PCA_
 ```{r, echo=FALSE}
 df<-scale(df)
