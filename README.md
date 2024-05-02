@@ -8,6 +8,9 @@ The objective of this repository is to outline a set of instructions for impleme
 
 ### Overview
 Principal Component Analysis is a widely utilized statistical method employed for reducing dimensionality and visualizing data. Its primary objective is to identify prominent patterns and correlations within high-dimensional datasets by transforming the original variables into a new set of uncorrelated variables known as principal components. By representing the data using the top two or three principal components, it becomes possible to plot the data points and gain insights into their distribution and patterns. 
+
+![](PCA/figures/pcafig.JPG)<!-- -->
+
 Let's consider a scenario where we have $n$ observations with measurements on a set of $p$ features. PCA aims to discover a low-dimensional representation of the dataset that retains as much variation as possible. The underlying idea is that each of the $n$ observations exist in a $p$-dimensional space, but not all dimensions are equally informative. PCA seeks a small number of dimensions that capture the most interesting aspects, with interestingness measured by the amount of variability exhibited by the observations along each dimension.
 Each principal component is a linear combination of the original variables and represents a specific direction in the data space. The first principal component is a linear combination of the primary predictors that captures the most variance in the dataset. It determines the direction of the greatest changes in the data. The larger the range of changes along the first component, the more information it contains. The second principal component is also a linear combination of the original predictors, capturing the remaining variance in the dataset while being uncorrelated with the first principal component.
 
