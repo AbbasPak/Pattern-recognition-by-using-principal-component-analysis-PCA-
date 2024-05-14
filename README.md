@@ -31,10 +31,14 @@ library(ggtext)
 library("readxl")
 library(ggpubr)
 ```
-_Step 2. Data Standardization:_ PCA begins by standardizing the dataset to ensure that all variables have zero mean and unit variance. This step is important because variables with larger scales can disproportionately influence the PCA results.
+_Step 2. Data Standardization:_ PCA begins by standardizing the dataset to ensure that all variables have zero mean and unit variance. This step is important because variables with larger scales can disproportionately influence the PCA results. For standardizing features, use *scale(df)*.
 
 _Step 3. Conduct PCA:_
-Here, we use  `FactoMineR` and `FactoExtra` packages which provide additional tools for enhancing the visualization and interpretation of PCA results. These packages offer functions for generating scree plots, biplots, and cluster analysis based on PCA.
+Perform PCA and disply the results by using 
+
+*pca3 <- PCA(df)*
+
+*pca3$eig*
 
 _Step 4. Visualize PCA Results:_
 *Biplots* are a valuable tool for visualizing relationships between variables and observations in multivariate datasets. They offer a concise graphical summary of the data's structure, providing insights that may not be readily apparent from the raw data alone. In a biplot, both the observations (data points) and variables (features) are represented within the same plot. The axes of the plot are defined by the principal components obtained from PCA. The data points are projected onto this reduced-dimensional space, indicating their positions.
