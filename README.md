@@ -17,7 +17,7 @@ Each principal component is a linear combination of the original variables and r
 ### The steps of performing PCA
 
 _Step 1. Load the Required Packages:_
-Different packages are used in R for performing Principal Component Analysis (PCA) such as `stats`,  `FactoMine`, `FactoExtra`, `princurve`, …. Each package has its own set of functions and features, so you can choose the one that best suits your specific needs and preferences.  In addition, `ggplot2` package was used to visualize the results of PCA.
+Different packages are used in R for performing Principal Component Analysis (PCA) such as `stats`,  `FactoMine`, `FactoExtra`, `princurve`, …. Each package has its own set of functions and features, so you can choose the one that best suits your specific needs and preferences.  Here, we use  `FactoMineR` and `FactoExtra` packages which provide additional tools for enhancing the visualization and interpretation of PCA results. These packages offer functions for generating scree plots, biplots, and cluster analysis based on PCA. In addition, `ggplot2` package was used to visualize the results of PCA.
 ```{r}
 library(FactoMineR)
 library(factoextra)
